@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Guestbook - a serverless web application</title>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="guestbook.js"></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
@@ -59,7 +62,7 @@
       </div>
     </div>
   </section>
-
+  <div id='map'></div>
   <script id="entries-template" type="text/x-handlebars-template">
     {{#each entries}}
     <div class="box">
@@ -81,11 +84,6 @@
     </div>
     {{/each}}
   </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="guestbook.js"></script>
-  <div id='map'></div>
   <script>
    mapboxgl.accessToken = 'pk.eyJ1Ijoiemhhb3l1dyIsImEiOiJjamp0andjM2UwNG16M3FvY3UyMmZpbGh3In0.ZOndyxyY209jNaTnCvgHPw';
    var map = new mapboxgl.Map({
