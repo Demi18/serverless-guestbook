@@ -57,7 +57,7 @@
       </div>
     </div>
   </section>
-
+  <div id='map'  style='width: 400px; height: 300px;'></div>
   <script id="entries-template" type="text/x-handlebars-template">
     {{#each entries}}
     <div class="box">
@@ -80,14 +80,13 @@
     </div>
     {{/each}}
   </script>
-  <script> console.log('1111');</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="guestbook.js"></script>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
-  <div id='map'  style='width: 400px; height: 300px;'></div>
+  
   <script>
-    alert('hello world');
+    alert('here');
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGVtaTA3MjUiLCJhIjoiY2prMHNudXhqMGE5bzNrcWtmYW5tanc2eiJ9.ub_csawPBIIwcif8-jnYQw';
     var map = new mapboxgl.Map({
         container: 'map', // container id
