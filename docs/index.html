@@ -32,25 +32,25 @@
           </h3>
           <form id="addEntry">
             <div class="field">
-              <label class="label">Name</label>
+              <label class="label">City</label>
               <div class="control">
-                <input class="input" type="text" placeholder="your name" id="name">
+                <input class="input" type="text" placeholder="your city" id="city">
               </div>
             </div>
             <div class="field">
-              <label class="label">Email</label>
+              <label class="label">Latitude</label>
               <div class="control">
-                <input class="input" type="text" placeholder="your email" id="email">
+                <input class="input" type="text" placeholder="your latitude" id="latitude">
               </div>
             </div>
             <div class="field">
-              <label class="label">Comment</label>
+              <label class="label">Longitude</label>
               <div class="control">
-                <textarea class="textarea" placeholder="your comment" id="comment"></textarea>
+                <textarea class="textarea" placeholder="your longitude" id="longitude"></textarea>
               </div>
             </div>
             <div class="control">
-              <button class="button is-primary">Send your message</button>
+              <button class="button is-primary">Submit</button>
             </div>
           </form>
         </div>
@@ -70,9 +70,9 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <strong>{{name}}</strong> 
-              <br><small>{{email}}</small>
-              <br> {{comment}}
+              <strong>{{city}}</strong> 
+              <br><small>{{latitude}}</small>
+              <br> {{longitude}}
             </p>
           </div>
         </div>
