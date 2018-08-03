@@ -72,7 +72,7 @@
           <div class="content">
             <p>
               <strong>{{city}}</strong> 
-              <br><small id='lat'>{{latitude}}</small>
+              <br><small>{{latitude}}</small>
               <br> {{longitude}}
             </p>
           </div>
@@ -87,8 +87,7 @@
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
   
   <script>
-    var lat=document.getElementById('lat').value;
-    alert(lat);
+    alert('111111111');
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGVtaTA3MjUiLCJhIjoiY2prMHNudXhqMGE5bzNrcWtmYW5tanc2eiJ9.ub_csawPBIIwcif8-jnYQw';
     var map = new mapboxgl.Map({
         container: 'map', // container id
